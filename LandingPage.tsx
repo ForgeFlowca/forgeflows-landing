@@ -15,7 +15,7 @@ const LandingPage: React.FC = () => {
                 <div className="max-w-7xl mx-auto px-6 relative z-10 text-center">
                     <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 font-medium text-sm mb-8">
                         <span className="flex h-2 w-2 rounded-full bg-red-500 animate-pulse"></span>
-                        ForgeFlows is in development — <a href="/waitlist" className="text-blue-400 hover:text-blue-300">join the waitlist</a>
+                        ForgeFlows is in development — <Link to="/waitlist" className="text-blue-400 hover:text-blue-300">join the waitlist</Link>
                     </div>
 
                     <h1 className="text-5xl md:text-7xl font-bold tracking-tight text-white mb-8">
