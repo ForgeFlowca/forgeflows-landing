@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="ForgeFlows — The operating system for distributed manufacturing. Connect with elite machine shops instantly.">
+  <title>ForgeFlows Marketplace</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    const customBlue = {
+      50: '#eef3f7',
+      100: '#d5e2eb',
+      200: '#afc8da',
+      300: '#82a7c4',
+      400: '#5985a9',
+      500: '#3d678a',
+      600: 'rgb(17, 36, 50)',
+      700: '#0d1d2a',
+      800: '#0a1622',
+      900: '#071018',
+      950: '#04090d',
+    };
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            blue: customBlue,
+            slate: customBlue
+          }
+        }
+      }
+    }
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+  </style>
+
+  <script type="module" src="/index.tsx"></script>
+</head>
+
+<body class="bg-slate-50 text-slate-900">
+  <div id="root"></div>
+</body>
+
+</html>
