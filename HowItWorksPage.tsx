@@ -44,8 +44,8 @@ const HowItWorksPage: React.FC = () => {
         },
         {
             icon: ClipboardClock,
-            title: '7. Production Planning',
-            description: 'Manage production via interactive Gantt charts with dependency tracking. Suppliers post real-time status updates, giving you instant visibility into progress, quality, and logistics milestones.',
+            title: '7. Production Tracking',
+            description: 'Suppliers post real-time status updates, giving you instant visibility into progress, quality, and logistics milestones. Manage changes and conversations with context tracking all within the platform.',
             color: 'blue'
         },
         {

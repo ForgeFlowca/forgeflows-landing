@@ -13,7 +13,7 @@ const AboutPage: React.FC = () => {
                     </span>
                 </h1>
                 <p className="text-xl text-slate-400 max-w-3xl mx-auto leading-relaxed">
-                    To bridge the gap between design and production by digitizing the B2B manufacturing lifecycle through AI-powered technical analysis, intelligent supplier matching, and automated governance.
+                    To bridge the gap between design and production by digitizing the B2B manufacturing lifecycle through AI-powered technical analysis, intelligent supplier matching, transparent performance scoring, and automated governance.
                 </p>
             </section>
 
@@ -42,7 +42,7 @@ const AboutPage: React.FC = () => {
                         </div>
                         <h3 className="text-xl font-bold text-white mb-4">Smart Match</h3>
                         <p className="text-slate-400 leading-relaxed">
-                            Multi-dimensional ranking based on machine envelopes, material history, and real-time capacity signals.
+                            Multi-dimensional ranking based on machine envelopes, material history, and shop performance ratings
                         </p>
                     </div>
                     <div className="bg-slate-900/50 p-8 rounded-2xl border border-white/5 hover:border-violet-500/30 transition-colors group">
@@ -60,7 +60,7 @@ const AboutPage: React.FC = () => {
                         </div>
                         <h3 className="text-xl font-bold text-white mb-4">Automated Governance</h3>
                         <p className="text-slate-400 leading-relaxed">
-                            AI-assisted flagging of contract risks and objective, data-driven performance scoring.
+                            Eliminate scope creep and time consuming paperwork with automated in-line contract scope. Reduce risk and disputes with automated change order tracking.
                         </p>
                     </div>
                 </div>

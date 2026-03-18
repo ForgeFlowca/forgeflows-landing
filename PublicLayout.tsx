@@ -22,11 +22,8 @@ const PublicLayout: React.FC = () => {
                         <Link to="/about" className={`text-sm font-medium transition-colors ${location.pathname === '/about' ? 'text-white' : 'text-slate-400 hover:text-white'}`}>About Us</Link>
                     </div>
 
-                    <div className="flex items-center gap-4">
-                        <Link to="/waitlist" className="hidden sm:block text-sm font-medium text-slate-300 hover:text-white transition-colors">
-                            Waitlist
-                        </Link>
-                        <Link to="/waitlist" className="bg-white text-slate-950 hover:bg-slate-200 text-sm font-semibold px-5 py-2.5 rounded-full transition-all flex items-center gap-2 group">
+                    <div className="flex items-center gap-2">
+                        <Link to="/waitlist" className="bg-white text-slate-950 hover:bg-slate-200 text-sm font-semibold px-5 py-2.5 rounded-full transition-all flex items-center gap-2 group shadow-lg shadow-blue-500/10 hover:shadow-blue-500/20 active:scale-95">
                             Join Waitlist <ChevronRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                         </Link>
                     </div>
@@ -50,7 +47,7 @@ const PublicLayout: React.FC = () => {
                                 </span>
                             </Link>
                             <p className="text-slate-400 text-sm max-w-sm mb-6">
-                                The operating system for distributed manufacturing. Connecting buyers with elite machine shops through structured data and AI.
+                                The operating system for distributed manufacturing. Buyers stop guessing about shop capabilities. Suppliers stop wasting time on jobs they can't do.
                             </p>
                             <div className="flex gap-4">
                                 {/* <a href="#" className="p-2 bg-white/5 rounded-full hover:bg-white/10 transition-colors text-slate-400 hover:text-white"><Twitter className="w-4 h-4" /></a> */}

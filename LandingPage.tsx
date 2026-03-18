@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import { Zap, Brain, ShieldCheck, MessageSquare, ArrowRight, Activity, Users, FileText } from 'lucide-react';
+import { Zap, Brain, Star, ShieldCheck, MessageSquare, ArrowRight, Activity, Users, FileText } from 'lucide-react';
 
 const LandingPage: React.FC = () => {
     const navigate = useNavigate();
@@ -14,8 +14,8 @@ const LandingPage: React.FC = () => {
 
                 <div className="max-w-7xl mx-auto px-6 relative z-10 text-center">
                     <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 font-medium text-sm mb-8">
-                        <span className="flex h-2 w-2 rounded-full bg-blue-500 animate-pulse"></span>
-                        ForgeFlows MVP is now live
+                        <span className="flex h-2 w-2 rounded-full bg-red-500 animate-pulse"></span>
+                        ForgeFlows is in development — <a href="/waitlist" className="text-blue-400 hover:text-blue-300">join the waitlist</a>
                     </div>
 
                     <h1 className="text-5xl md:text-7xl font-bold tracking-tight text-white mb-8">
@@ -26,7 +26,7 @@ const LandingPage: React.FC = () => {
                     </h1>
 
                     <p className="text-xl text-slate-400 max-w-2xl mx-auto mb-12">
-                        The operating system for distributed manufacturing. We use AI to extract data from your technical drawings, instantly matching your project with the best machine shops on earth.
+                        The operating system for distributed manufacturing. Buyers stop guessing about shop capabilities. Suppliers stop wasting time on jobs they can't do.
                     </p>
 
                     <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -78,13 +78,13 @@ const LandingPage: React.FC = () => {
                         <p className="text-lg text-slate-400 max-w-2xl mx-auto">Everything you need to source, negotiate, and award manufacturing projects with confidence.</p>
                     </div>
 
-                    <div className="grid md:grid-cols-2 gap-6">
+                    <div className="grid md:grid-cols-3 gap-6">
                         <div className="bg-slate-900 p-8 rounded-2xl border border-white/5 hover:border-blue-500/30 transition-colors">
                             <div className="w-12 h-12 bg-blue-500/10 rounded-xl flex items-center justify-center mb-6 border border-blue-500/20">
                                 <Brain className="w-6 h-6 text-blue-400" />
                             </div>
-                            <h3 className="text-xl font-semibold text-white mb-3">AI Drawing Analysis</h3>
-                            <p className="text-slate-400">Upload a PDF. Our Gemini-powered AI extracts materials, multi-axis tolerances, and finishes, structuring your project automatically.</p>
+                            <h3 className="text-xl font-semibold text-white mb-3">Project Structuring</h3>
+                            <p className="text-slate-400">Upload your technical drawing. AI extracts materials, tolerances, and finishes. You refine and structure the project. Our algorithm scores your RFQ and finds suppliers with proven capability to deliver.</p>
                         </div>
 
                         <div className="bg-slate-900 p-8 rounded-2xl border border-white/5 hover:border-violet-500/30 transition-colors">
@@ -92,7 +92,7 @@ const LandingPage: React.FC = () => {
                                 <Activity className="w-6 h-6 text-violet-400" />
                             </div>
                             <h3 className="text-xl font-semibold text-white mb-3">Smart Match Algorithm</h3>
-                            <p className="text-slate-400">We don't do blind RFQs. We algorithmically match projects to shops based on machine envelope, capability, material, and required certs.</p>
+                            <p className="text-slate-400">We algorithmically match projects to shops based on capabilities, machine specifications, and required certs. Only details are left to clear up.</p>
                         </div>
 
                         <div className="bg-slate-900 p-8 rounded-2xl border border-white/5 hover:border-emerald-500/30 transition-colors">
@@ -110,6 +110,22 @@ const LandingPage: React.FC = () => {
                             <h3 className="text-xl font-semibold text-white mb-3">In-Platform Messaging</h3>
                             <p className="text-slate-400">Keep communication contextual. Message suppliers directly on work packages to clarify specs and negotiate partial scope.</p>
                         </div>
+
+                        <div className="bg-slate-900 p-8 rounded-2xl border border-white/5 hover:border-amber-500/30 transition-colors">
+                            <div className="w-12 h-12 bg-red-500/10 rounded-xl flex items-center justify-center mb-6 border border-red-500/20">
+                                <ShieldCheck className="w-6 h-6 text-red-400" />
+                            </div>
+                            <h3 className="text-xl font-semibold text-white mb-3">Automated Contract Generation</h3>
+                            <p className="text-slate-400">Contracts auto-generate directly from your RFQ. Use in-platform messaging to negotiate terms with suppliers. Every change is tracked and automatically reflected in the contract. No manual updates, no confusion.</p>
+                        </div>
+                        <div className="bg-slate-900 p-8 rounded-2xl border border-white/5 hover:border-amber-500/30 transition-colors">
+                            <div className="w-12 h-12 bg-orange-500/10 rounded-xl flex items-center justify-center mb-6 border border-orange-500/20">
+                                <Star className="w-6 h-6 text-orange-400" />
+                            </div>
+                            <h3 className="text-xl font-semibold text-white mb-3">Performance Scoring</h3>
+                            <p className="text-slate-400">After delivery, rate your supplier on quality, speed, and professionalism. Suppliers rate you on clear specifications and fair dealing. Real feedback builds real reputation. Everyone sees the scores, so trust is earned, not claimed.</p>
+                        </div>
+
                     </div>
                 </div>
             </section>
